@@ -1,0 +1,30 @@
+.text-barcode-container {
+    text-align: center;
+  } 
+  
+  .text-barcode {
+    font-weight: 500;
+  }
+  
+  .text-barcode-title-container {
+    justify-content: center;
+    display: flex;
+    white-space: normal;
+    width: 100%;
+  }
+  
+  .text-barcode-title {
+    font-weight: 700;
+    font-size: large;
+  }
+  
+  .text-barcode-desc {
+    font-weight: 700;
+    font-size: large;
+    width: 30%;
+  }
+  
+  hr.custom-hr {
+    border-top: 1px solid black;
+    width: 30%;
+  }

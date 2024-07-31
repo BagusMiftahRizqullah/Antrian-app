@@ -1,0 +1,19 @@
+.text-title-head {
+    font-weight: 700;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: x-large;
+  }
+  
+  .button-row {
+    display: table-cell;
+    width: 100%;
+  }
+  
+  .button-row .mat-button-base {
+    margin: 16px 16px 16px 0;
+  }
+  
+  .text-button {
+    padding: 0 8px;
+  }

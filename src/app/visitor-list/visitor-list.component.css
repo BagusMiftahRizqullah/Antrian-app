@@ -1,0 +1,80 @@
+.table-container {
+    overflow: auto;
+    height: 500px;
+    width: 100%;
+  }
+  
+  .title-head {
+    margin: 0 20px;
+  }
+  
+  table,
+  mat-paginator {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 0 !important;
+  }
+  
+  td,
+  th {
+    width: 25%;
+  }
+  
+  .mat-table {
+    overflow-x: scroll;
+  }
+  
+  .mat-cell,
+  .mat-header-cell {
+    word-wrap: initial;
+    display: table-cell;
+    padding: 0px 10px;
+    line-break: unset;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  
+  .mat-row,
+  .mat-header-row {
+    display: table-row;
+  }
+  
+  .button-container {
+    display: flex;
+    margin: 0 12px;
+  }
+  
+  .button-content {
+    margin: auto;
+  }
+  
+  .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+  
+  .mat-paginator-sticky {
+    bottom: 0px;
+    position: sticky;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .text-button {
+    padding: 0 8px;
+  }
+  

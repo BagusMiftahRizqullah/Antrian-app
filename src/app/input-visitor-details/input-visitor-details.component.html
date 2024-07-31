@@ -1,0 +1,73 @@
+<p>input-visitor-details works!</p>
+<p class="text-title-head">Customer Biodata</p>
+
+<div class="button-row">
+  <button mat-flat-button color="primary" (click)="onSubmit()">
+    <mat-icon>add</mat-icon>
+    <span class="text-button">Add</span>
+  </button>
+</div>
+
+<form [formGroup]='form'>
+  <div fxLayout="row" fxLayoutGap="20px">
+
+    <div fxLayout="column" fxFlex="1 1 auto">
+      <mat-form-field appearance="outline">
+        <mat-label>Salesman Id</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="salesman_id">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Customer Name</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="customer_name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Pic</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="pic">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="city">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Remark</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="remark">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>NPWP</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="npwp">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Customer Price Category</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="customer_price_category">
+      </mat-form-field>
+    </div>
+    
+    <div fxLayout="column" fxFlex="1 1 auto">
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="address">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Address ke 2</mat-label>
+        <input matInput placeholder="Placeholder"  formControlName="address2">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Contact No</mat-label>
+        <input matInput placeholder="Placeholder"  formControlName="contact_no">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Region</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="region">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Province</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="province">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Kuota</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="kouta">
+      </mat-form-field>
+
+    </div>
+  </div>
+</form>

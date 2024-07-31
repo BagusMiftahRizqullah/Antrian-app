@@ -1,0 +1,35 @@
+<div class="container-menu">
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+      (click)="onSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="menu-title">Customer Queue Management</span>
+    <span style="flex: auto 1 1;"></span>
+    <span class="menu-date">{{ newDate }} • {{ newTime | date:'mediumTime' }}</span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>bug_report</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>live_help</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon (mouseover)="changeText=true" (mouseout)="changeText=false">person</mat-icon>
+    </button>
+    <span *ngIf="changeText" class="menu-person">{{ userName }}</span>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" #sidenav>
+      <mat-list *ngFor="let ls of listPath">
+        <button mat-button class="menu-button" (click)="onPath(ls.path)"><mat-icon>{{ ls.icon }}</mat-icon> {{ ls.name }}</button>
+      </mat-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="m-2">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

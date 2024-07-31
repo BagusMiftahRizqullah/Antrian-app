@@ -1,0 +1,36 @@
+<mat-card>
+    <div class="text-barcode-container">
+      <p class="text-barcode-title">{{ textHead }}</p>
+      <hr class="custom-hr">
+      <p class="text-barcode">{{ textInfo }}</p>
+      
+      <ngx-barcode *ngFor="let bcValue of values"
+        [bc-element-type]="elementType"
+        [bc-value]="bcValue"
+        [bc-format]="format"
+        [bc-line-color]="lineColor"
+        [bc-width]="width"
+        [bc-height]="height"
+        [bc-display-value]="displayValue"
+        [bc-font-options]="fontOptions"
+        [bc-font]="font"
+        [bc-text-align]="textAlign"
+        [bc-text-position]="textPosition"
+        [bc-text-margin]="textMargin"
+        [bc-font-size]="fontSize"
+        [bc-background]="background"
+        [bc-margin]="margin"
+        [bc-margin-top]="marginTop"
+        [bc-margin-bottom]="marginBottom"
+        [bc-margin-left]="marginLeft"
+        [bc-margin-right]="marginRight">
+      </ngx-barcode>
+    
+      <p class="text-barcode">{{ textInfo2 }}</p>
+      <p class="text-barcode">{{ dateNow }}, {{ timeNow }}</p>
+      <hr class="custom-hr">
+      <div class="text-barcode-title-container">
+        <p class="text-barcode-desc">{{ textDesc }}</p>
+      </div>
+    </div>
+  </mat-card>
